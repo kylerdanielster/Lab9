@@ -10,6 +10,13 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommissionEmployee.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="HourlyEmployee.h" />
+    <ClInclude Include="SalariedCommissionEmployee.h" />
+    <ClInclude Include="SalariedEmployee.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6ACEA276-65F8-4ABA-B959-2A23B05D5102}</ProjectGuid>
     <RootNamespace>Lab9</RootNamespace>
@@ -63,8 +70,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
