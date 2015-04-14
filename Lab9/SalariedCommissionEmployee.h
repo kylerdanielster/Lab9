@@ -3,8 +3,7 @@
 #include "SalariedEmployee.h"
 #include "CommissionEmployee.h"
 
-class SalariedCommissionEmployee : public SalariedEmployee,
-	public CommissioneEmployee
+class SalariedCommissionEmployee : public SalariedEmployee, public CommissionEmployee
 {
 public:
 	virtual double earnings();

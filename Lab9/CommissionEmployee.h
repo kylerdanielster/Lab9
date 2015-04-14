@@ -1,8 +1,8 @@
-#ifndef COMMISSIONEDEMPLOYEE_H
-#define COMMISSIONEDEMPLOYEE
+#ifndef COMMISSIONEEMPLOYEE_H
+#define COMMISSIONEEMPLOYEE
 #include "Employee.h"
 
-class CommissionesEmployee : public Employee
+class CommissionEmployee : public Employee
 {
 private:
 	double comissionRate;

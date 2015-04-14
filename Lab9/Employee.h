@@ -9,7 +9,7 @@ class Employee{
 private:
 	string name;
 	string ssn;
-	list<T> accounts;
+	//list<BankAccount> *accounts;
 public:
 	string getName() const;
 	string getSsn() const;
@@ -17,7 +17,7 @@ public:
 	void setName(string);
 	void setSsn(string);
 
-	virtual double earnings();
+	virtual double earnings() = 0;
 	virtual void print() const;
 
 };

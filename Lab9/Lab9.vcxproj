@@ -11,11 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BankAccount.h" />
+    <ClInclude Include="CheckingAccount.h" />
     <ClInclude Include="CommissionEmployee.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="HourlyEmployee.h" />
     <ClInclude Include="SalariedCommissionEmployee.h" />
     <ClInclude Include="SalariedEmployee.h" />
+    <ClInclude Include="SavingsAccount.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6ACEA276-65F8-4ABA-B959-2A23B05D5102}</ProjectGuid>
