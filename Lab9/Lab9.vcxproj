@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bank.h" />
     <ClInclude Include="BankAccount.h" />
     <ClInclude Include="CheckingAccount.h" />
     <ClInclude Include="CommissionEmployee.h" />
@@ -19,6 +20,14 @@
     <ClInclude Include="SalariedCommissionEmployee.h" />
     <ClInclude Include="SalariedEmployee.h" />
     <ClInclude Include="SavingsAccount.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bank.cpp" />
+    <ClCompile Include="BankAccount.cpp" />
+    <ClCompile Include="CheckingAccount.cpp" />
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SavingsAccount.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6ACEA276-65F8-4ABA-B959-2A23B05D5102}</ProjectGuid>

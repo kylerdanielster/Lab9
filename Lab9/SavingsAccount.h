@@ -8,10 +8,16 @@ private:
 	bool status;
 
 public:
+	SavingsAccount(){}
+	SavingsAccount(double bal, double dep, double with) : BankAccount(bal, dep, with)
+	{
+		deposit(dep);
+		withdrawl(with);
+	}
+	
 	virtual void deposit(double);
 	virtual void withdrawl(double);
-	virtual void monthlyProc();
-
-
+	
+	//virtual void monthlyProc();
 };
 #endif

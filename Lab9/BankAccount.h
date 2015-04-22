@@ -6,18 +6,20 @@
 using namespace std;
 
 class BankAccount{
-private:
-	string balance;
+protected:
+	double balance;
 	int withdrawls, deposits;
-	double AnnualRate, monthlySerCharge;
+	//double AnnualRate, monthlySerCharge;
 
 public:
 	BankAccount(){}
-	BankAccount(string, double);// args: balance and annual interest rates
+	BankAccount(double b, double d, double w) { balance = b; deposit(d); withdrawl(w); ++deposits; }
 	
-	virtual void deposit(double);
+	virtual void deposit(double deposite) { balance += deposite; ++withdrawls; }
+
 	virtual void withdrawl(double);
-	virtual void calcInt();
-	virtual void monthlyProc();
+	
+	//virtual void calcInt();
+	//virtual void monthlyProc();
 };
 #endif

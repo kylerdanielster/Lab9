@@ -2,6 +2,7 @@
 #define EMPLOYEE_H
 #include <string>
 #include <list>
+#include "BankAccount.h"
 
 using namespace std;
 
@@ -9,7 +10,7 @@ class Employee{
 private:
 	string name;
 	string ssn;
-	//list<BankAccount> *accounts;
+	list<BankAccount*> accounts;
 public:
 	string getName() const;
 	string getSsn() const;
