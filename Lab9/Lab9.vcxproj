@@ -25,6 +25,7 @@
     <ClCompile Include="Bank.cpp" />
     <ClCompile Include="BankAccount.cpp" />
     <ClCompile Include="CheckingAccount.cpp" />
+    <ClCompile Include="CommissionEmployee.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SavingsAccount.cpp" />

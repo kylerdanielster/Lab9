@@ -12,7 +12,7 @@ private:
 	list <Employee *> customers;
 public:
 	void setName(string n){ name = n; }
-	string getName() { return name; }
+	string getName() const { return name; }
 	
 	void sortByName();
 	void sortByBalance();

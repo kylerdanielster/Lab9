@@ -12,6 +12,8 @@ private:
 	string ssn;
 	list<BankAccount*> accounts;
 public:
+	void addAccount(BankAccount*);
+
 	string getName() const;
 	string getSsn() const;
 
@@ -19,7 +21,7 @@ public:
 	void setSsn(string);
 
 	virtual double earnings() = 0;
-	virtual void print() const;
+	virtual void print() const; // returns name, ssn, salasry and bank account information
 
 };
 
