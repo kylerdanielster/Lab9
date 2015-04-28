@@ -5,15 +5,15 @@
 class CommissionEmployee : public Employee
 {
 private:
-	double comissionRate;
+	double commissionRate;
 	double grossSales;
 public:
-    CommissionEmployee(double cr, double gs) { comissionRate = cr; grossSales = gs; }
+    CommissionEmployee(double cr, double gs) { commissionRate = cr; grossSales = gs; }
     CommissionEmployee(string n, string ssn, double cr, double gs)
     {
         setName(n);
         setSsn(ssn);
-        comissionRate = cr;
+        commissionRate = cr;
         grossSales = gs;
     }
 	virtual double earnings();

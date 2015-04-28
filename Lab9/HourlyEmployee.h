@@ -7,7 +7,7 @@ private:
 	int hours;
 	double wages;
 public:
-    
+    HourlyEmployee(){}
     HourlyEmployee(string n, string ssn, int h, double w)
     {
         std::cout << "HourlyEmployee constructor" << std::endl;
