@@ -12,16 +12,16 @@ private:
 	string ssn;
 	list<BankAccount*> accounts;
 public:
-	void addAccount(BankAccount*);
+	void addAccount(BankAccount* a) { accounts.push_back(a); cout << "Account Added" << endl; }
 
-	string getName() const;
-	string getSsn() const;
+    string getName() const { return name; }
+    string getSsn() const {return ssn; }
 
-	void setName(string);
-	void setSsn(string);
+    void setName(string n) { name = n; }
+    void setSsn(string s) { ssn = s; }
 
 	virtual double earnings() = 0;
-	virtual void print() const; // returns name, ssn, salasry and bank account information
+    virtual void print() const {}// returns name, ssn, salasry and bank account information
 
 };
 

@@ -9,9 +9,11 @@ using namespace std;
 class Bank{
 private:
 	string name;
-	list <Employee *> customers;
+	list <Employee*> customers;
 public:
-	void setName(string n){ name = n; }
+    Bank(){ cout << "Bank constructor" << endl; }
+	
+    void setName(string n){ name = n; }
 	string getName() const { return name; }
 	
 	void sortByName();

@@ -7,13 +7,10 @@ private:
 
 public:
 	CheckingAccount(){}
-	CheckingAccount(double bal, double dep, double with) : BankAccount(bal, dep, with) 
-	{
-	
-	}
+    CheckingAccount(double bal) : BankAccount(bal) {}
 	
 	virtual void deposite(double);
-	virtual void withdrawl(double);
+	virtual void withdraw(double);
 	
 	//virtual void monthlyProc();
 };

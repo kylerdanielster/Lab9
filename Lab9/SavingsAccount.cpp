@@ -16,7 +16,7 @@ void SavingsAccount::deposit(double d)
 }
 
 
-void SavingsAccount::withdrawl(double w)
+void SavingsAccount::withdraw(double w)
 {
 	if (balance > w){
 		balance -= w;

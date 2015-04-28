@@ -9,14 +9,10 @@ private:
 
 public:
 	SavingsAccount(){}
-	SavingsAccount(double bal, double dep, double with) : BankAccount(bal, dep, with)
-	{
-		deposit(dep);
-		withdrawl(with);
-	}
+	SavingsAccount(double bal) : BankAccount(bal) {}
 	
 	virtual void deposit(double);
-	virtual void withdrawl(double);
+	virtual void withdraw(double);
 	
 	//virtual void monthlyProc();
 };

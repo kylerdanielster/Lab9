@@ -7,7 +7,18 @@ private:
 	int hours;
 	double wages;
 public:
-	virtual double earnings();
-	virtual void print() const;
+    
+    HourlyEmployee(string n, string ssn, int h, double w)
+    {
+        std::cout << "HourlyEmployee constructor" << std::endl;
+        setName(n);
+        setSsn(ssn);
+        hours = h;
+        wages = w;
+    }
+    
+    virtual double earnings() { return 0; }
+    virtual void print() const {}
 };
+
 #endif // !HOURLYEMPLOYEE_H

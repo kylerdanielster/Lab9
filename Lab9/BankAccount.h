@@ -8,18 +8,24 @@ using namespace std;
 class BankAccount{
 protected:
 	double balance;
-	int withdrawls, deposits;
+	int withdraws,
+        deposits;
 	//double AnnualRate, monthlySerCharge;
 
 public:
-	BankAccount(){}
-	BankAccount(double b, double d, double w) { balance = b; deposit(d); withdrawl(w); ++deposits; }
+    BankAccount(){ cout << "BankAccount constructor" << endl; } // initialize default  values
+    BankAccount(double b){ balance = b; }
+	BankAccount(double b, int d, int w) { balance = b; deposit(d); withdraw(w); ++deposits; }
 	
-	virtual void deposit(double deposite) { balance += deposite; ++withdrawls; }
+	virtual void deposit(double deposite) { balance += deposite; ++withdraws; }
 
-	virtual void withdrawl(double);
+	virtual void withdraw(double);
 	
-	//virtual void calcInt();
+	//need getters and setters for: balance. withdrawls, deposits
+    void setBal(double b){ balance = b; }
+    double getBal(){ return balance; }
+    
+    //virtual void calcInt();
 	//virtual void monthlyProc();
 };
 #endif

@@ -2,4 +2,4 @@
 
 void Bank::sortByName(){}
 void Bank::sortByBalance(){}
-void Bank::listCustomers(int){} // fort by name or sort by balance
+void Bank::listCustomers(int){} // sort by name or sort by balance
