@@ -10,8 +10,8 @@ private:
 public:
     SalariedEmployee(double s) { salary = s; }
     SalariedEmployee(string n, string ssn, double s) { salary = s; setName(n); setSsn(ssn);}
-	virtual double earnings();
-	virtual void print() const;
+	virtual double earnings() { return 0; }
+	virtual void print() const {} 
 };
 
 #endif // !SALARIEDEMPLOYEE_H

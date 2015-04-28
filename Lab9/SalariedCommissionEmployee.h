@@ -7,10 +7,10 @@ class SalariedCommissionEmployee : public SalariedEmployee, public CommissionEmp
 public:
     SalariedCommissionEmployee(string n, string ssn, double s, double cr, double gs) : SalariedEmployee(s) , CommissionEmployee(cr, gs)
     {
-        setName(n);
-        setSsn(ssn);
+        SalariedEmployee::setName(n);
+		SalariedEmployee::setSsn(ssn);
     }
-	virtual double earnings();
-	virtual void print() const;
+	virtual double earnings() { return 0; }
+	virtual void print() const {}
 };
 #endif // !SALARIEDCOMMISSIONEMPLOYEE_H

@@ -16,8 +16,8 @@ public:
         commissionRate = cr;
         grossSales = gs;
     }
-	virtual double earnings();
-	virtual void print() const;
+	virtual double earnings() { return 0; }
+	virtual void print() const {}
 };
 
 #endif // !COMMISSIONEDEMPLOYEE_H
